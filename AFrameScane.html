@@ -11,15 +11,24 @@
 
 <body>
     <a-scene>
-        <a-sphere 
-        position="2 1.5 -3" 
-        rotation="0 0 0"
-        scale="1 1 1"
-        color="yellow" 
-        radius="0.5"
-        wireframe="true"
-        ></a-sphere>
-        <a-box position="0 1.5 -3" rotation="0 45 0" color="#ff0000"></a-box>
+            <!-- <a-sphere 
+                position="2 1.5 -3" 
+                rotation="0 0 0"
+                scale="1 1 1"
+                color="yellow" 
+                radius="0.5"
+                wireframe="true"
+            > -->
+            <a-assets>
+                <img src="texture/texture-1.jpg" id="base" >
+                <img src="texture/normal-texture.jpg" id="normal" >
+            </a-assets>
+            <a-box 
+                src="#base"
+                normal-map="#normal"
+                position="0 1.5 -2" 
+                rotation="0 45 0"
+            />
     </a-scene>
 </body>
 
