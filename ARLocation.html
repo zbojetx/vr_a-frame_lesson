@@ -13,7 +13,12 @@
 
 <body>
     <!-- 0.9156919830192043, 108.998012870788 -->
-    <a-scene vr-mode-ui="enabled:false" arjs>
+    <a-scene
+    vr-mode-ui="enabled: false;"
+    renderer="logarithmicDepthBuffer: true;"
+    embedded
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+    >
         <a-box material="color: yellow" gps-entity-place="latitude: 0.9156919830192043; longitude: 108.998012870788>"/>
         <a-camera gps-camera rotation-reader></a-camera>
     </a-scene>
