@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> -->
 </head>
 
 <body>
     <a-scene>
-            <!-- <a-sphere 
+        <a-assets>
+            <a-asset-item id="plane" src="3d/Plane.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity gltf-model="#plane" scale="10 10 10"  position="0 1.5 -10" rotation="0 -90 0"></a-entity>
+        <!-- <a-gltf-model ></a-gltf-model> -->
+        <!-- <a-sphere 
                 position="2 1.5 -3" 
                 rotation="0 0 0"
                 scale="1 1 1"
@@ -20,16 +25,17 @@
                 radius="0.5"
                 wireframe="true"
             > -->
-            <a-assets>
-                <img src="texture/texture-1.jpg" id="base" >
-                <img src="texture/normal-texture.jpg" id="normal" >
-            </a-assets>
-            <a-box 
+        <!-- <a-assets>
+                <a-asset-item id="obj" src="3d/table_obj/table.obj"></a-asset-item>
+                <a-asset-item id="mtl" src="3d/table_obj/table.mtl"></a-asset-item>
+            </a-assets> -->
+        <!-- <a-obj-model scale="0.000001 0.000001 0.000001" src="3d/among_us_obj/amongus.obj" mtl="3d/among_us_obj/amongus.mtl" ></a-obj-model> -->
+        <!-- <a-box 
                 src="#base"
                 normal-map="#normal"
                 position="0 1.5 -2" 
                 rotation="0 45 0"
-            />
+            /> -->
     </a-scene>
 </body>
 
