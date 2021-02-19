@@ -15,11 +15,13 @@
     <a-scene >
         <a-assets>
             <a-asset-item id="plane" src="3d/scene.gltf"></a-asset-item>
+            <video id="video" autoplay loop="true" src="Video/vid.mp4"></video>
         </a-assets>
         <a-marker preset="hiro">
             <!-- <a-box material="opacity:0.5" scale="0.5 0.5 0.5" color="red"  animation__putar = "property: rotation; from: 0 0 0; to: 0 360 0; startEvents:mouseenter"> 
             </a-box> -->
-            <a-entity gltf-model="#plane" scale="0.02 0.02 0.02"  rotation="0 0 0" animation-mixer></a-entity>
+            <!-- <a-entity gltf-model="#plane" scale="0.02 0.02 0.02"  rotation="0 0 0" animation-mixer></a-entity> -->
+            <a-video src="#video" width="8" height="7" position="0 -15 -1" rotation="-90 0 0"></a-video>
         </a-marker>
         <a-entity camera>
             

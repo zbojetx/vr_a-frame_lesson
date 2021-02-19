@@ -14,9 +14,10 @@
     <a-scene>
         <a-assets>
             <a-asset-item id="plane" src="3d/scene.gltf"></a-asset-item>
+            <video id="video" autoplay loop="true" src="Video/vid.mp4"></video>
         </a-assets>
-        <a-entity gltf-model="#plane" scale="0.01 0.01 0.01" color="brown" rotation="180 0 0"></a-entity>
-
+        <!-- <a-entity gltf-model="#plane" scale="0.01 0.01 0.01" color="brown" rotation="180 0 0"></a-entity> -->
+        <a-video src="#video" width="21" height="15" position="0 0 -20"></a-video>
         <!-- <a-gltf-model ></a-gltf-model> -->
         <!-- <a-sphere 
                 position="2 1.5 -3" 
