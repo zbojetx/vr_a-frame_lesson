@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <!-- 0.9122609362559752, 108.9903174653796 -->
+    <!-- 0.9122689818629346, 108.99031008930457 -->
+    <!-- 0.9124868837111539, 108.9901390984746 simulate -->
     <a-scene
     embedded
     arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'
@@ -20,8 +21,8 @@
     <a-assets>
         <a-asset-item id="plane" src="3d/scene.gltf"></a-asset-item>
     </a-assets>
-    <a-camera gps-camera rotation-reader></a-camera>
-        <a-box material="color: yellow" gps-entity-place="latitude: 0.9122609362559752; longitude: 108.9903174653796" scale="1 1 1" />
+    <a-camera gps-camera="simulateLatitude:0.91248;simulateLongitude:108.99013" rotation-reader></a-camera>
+        <a-box material="color: yellow" gps-entity-place="latitude: 0.91226; longitude: 108.99032" scale="1 1 1" />
         <a-obj-model scale="0.01 0.01 0.01"  src="3d/obj/house/Farm_house.obj" mtl="3d/obj/house/Farm_house.mtl" gps-entity-place="latitude: 0.9122609362559752; longitude: 108.9903174653796"></a-obj-model>
     </a-scene>
 
