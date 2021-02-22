@@ -12,15 +12,18 @@
 </head>
 
 <body>
-    <!-- 0.9156919830192043, 108.998012870788 -->
+    <!-- 0.9122609362559752, 108.9903174653796 -->
     <a-scene
-    vr-mode-ui="enabled: false;"
+    vr-mode-ui="enabled: true;"
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
     >
+    <a-assets>
+        <a-asset-item id="plane" src="3d/scene.gltf"></a-asset-item>
+    </a-assets>
     <a-camera gps-camera rotation-reader></a-camera>
-        <a-box material="color: yellow" gps-entity-place="latitude: 0.915691; longitude: 108.998012" scale="1 1 1" maxDistance="10"/>
-        <!-- <a-text value="Masjid" gps-en></a-text> -->
+        <a-box material="color: yellow" gps-entity-place="latitude: 0.9122609362559752; longitude: 108.9903174653796" scale="1000 1000 1000" maxDistance="50"/>
+        <!-- <a-obj-model scale="0.01 0.01 0.01" src="3d/obj/house/Farm_house.obj" mtl="3d/obj/house/Farm_house.mtl" ></a-obj-model> -->
     </a-scene>
 
 </body>
